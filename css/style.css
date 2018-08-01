@@ -1,0 +1,594 @@
+/*reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*html*/
+html{
+    font-family: "ralewayregular", sans-serif;
+}
+
+
+
+/*font*/
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular.woff2') format('woff2'),
+    url('../fonts/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*style for layout*/
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 65px 0 65px;;
+}
+
+.row::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+header, section, footer{
+    width: 100%;
+}
+
+
+/*common styles*/
+body{
+    font-size: 16px;
+}
+
+li{
+    list-style-type: none;
+}
+
+span{
+    color: #24B89E;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*styles for header*/
+header{
+    min-height: 41px;
+    background-color: black;
+    color: white;
+    padding-top: 13px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header p{
+    float: left;
+    font-weight: bold;
+}
+
+header nav{
+    float: right;
+    position: relative;
+}
+
+header nav li{
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 55px;
+}
+
+
+header nav li:hover{
+    color: #24B89E;
+}
+
+
+.hidden_menu{
+    display: none;
+    border-radius: 5%;
+    width: 120px;
+    height: 90px;
+    background-color: black;
+    position: absolute;
+    margin-top: 25px;
+    left: 7%;
+}
+
+.hidden_menu li{
+    margin-top: 12px;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    text-transform: none;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.more_info:hover .hidden_menu{
+    display: block;
+}
+
+
+
+/*styles for present section*/
+.present_section{
+    background-image: linear-gradient(white, silver);
+    min-height: 500px;
+}
+
+.present{
+    float: left;
+    width: 41%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.text{
+    margin-top: 80px;
+    margin-right: 90px;
+}
+.img{
+    background-image: url("../images/black_chair.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    height: 400px;
+    width: 440px;
+}
+
+.present h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 51px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    word-spacing: 1px;
+}
+
+.present p{
+    line-height: 22px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+}
+
+.present button{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 23px;
+    word-spacing: 1px;
+    padding: 13px 33px 11px 43px;
+    color: white;
+    background-color: #24B89E;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.slider{
+    float: left;
+    color: #24B89E;
+    font-size: 80px;
+    margin-top: 205px;
+    cursor: pointer;
+}
+
+/*styles for gallery section*/
+.gallery_section{
+    background-color: #fff;
+    min-height: 350px;
+}
+
+.gallery{
+    float: left;
+    width: 29%;
+    position: relative;
+}
+
+.left{
+    width: 330px;
+    height: 225px;
+    background-image: url("../images/box1_img.jpg");
+    margin-top: 2.5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left h4{
+    padding-top: 10px;
+    padding-left: 15px;
+    background-color: rgba(250, 250, 250, 0.3);
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.center{
+    width: 330px;
+    height: 225px;
+    background-image: url("../images/box2_img.jpg");
+    margin: 2.5% 2.5% 0 2.5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center h4{
+    padding-top: 10px;
+    padding-left: 15px;
+    background-color: rgba(250, 250, 250, 0.3);
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.right{
+    width: 340px;
+    height: 252px;
+    margin-top: 2.5%;
+    padding: 28px 20px 0 22px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid silver;
+}
+
+.right p{
+    padding-top: 15px;
+    color: #767676;
+}
+
+.right h3{
+    border-bottom: 7px solid #24B89E;
+    width: 46%;
+}
+
+.border_text{
+    position: absolute;
+    width: 43%;
+    border-bottom: 7px solid #24B89E;
+    bottom: 35px;
+    margin-left: 15px;
+}
+
+
+/*styles for price section*/
+.price_section{
+    background-color: #efefef;
+    min-height: 700px;
+    padding-top: 41px;
+}
+
+.price_section h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    color: #24B89E;
+    padding-top: 20px;
+}
+
+h2{
+    text-transform: uppercase;
+    width: 30%;
+    border-bottom: 7px solid #24B89E;
+    color: #767676;
+    font-weight: normal;
+}
+
+/*styles for first card*/
+
+.card_1{
+    width: 330px;
+    height: 500px;
+    margin-top: 85px;
+    border: 2px solid #C0C0C0;
+    float: left;
+    position: relative;
+    background-color: #F9F9F9;
+}
+
+.card_2{
+    width: 330px;
+    height: 500px;
+    margin: 85px 30px 60px 30px;
+    border: 2px solid #24B89E;
+    float: left;
+    position: relative;
+    background-color: #24B89E;
+}
+
+.card_3{
+    width: 330px;
+    height: 500px;
+    margin-top: 85px;
+    border: 2px solid #C0C0C0;
+    float: left;
+    position: relative;
+    background-color: #F9F9F9;
+}
+
+#middle_h3{
+    color: white;
+}
+
+.circle_price{
+    width: 130px;
+    height: 130px;
+    padding-top: 25px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    border: 2px solid #C0C0C0;
+    margin-top: 30px;
+    background-color: white;
+    color: #a3a3a3;
+    position: absolute;
+    left: 30%;
+    text-transform: uppercase;
+}
+
+.circle_price sup{
+    font-size: 18px;
+}
+
+.circle_price .info{
+    font-size: 16px;
+    padding-top: 7px;
+}
+
+.offer{
+    width: 100%;
+    min-height: 170px;
+    margin-top: 190px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: grey;
+}
+
+.offer_info_1{
+    height: 40px;
+    background-color: #e3e3e3;
+    padding-top: 5px;
+}
+.offer_info_2{
+    height: 45px;
+    background-color: #f1f1f1;
+    padding-top: 7px;
+}
+.offer_info_3{
+    height: 45px;
+    background-color: #ffffff;
+    padding-top: 5px;
+}
+
+.extreme_button{
+    width: 120px;
+    height: 35px;
+    background-color: #24B89E;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    position: absolute;
+    left: 32%;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.middle_button{
+    width: 120px;
+    height: 35px;
+    background-color: #ffffff;
+    color: #24B89E;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    position: absolute;
+    left: 32%;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card_outer_ring_1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #C0C0C0;
+    background-color: #F9F9F9;
+    position: absolute;
+    left: 135px;
+    top: -40px;
+}
+.card_inner_dot_1{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #C0C0C0;
+    background-color: #C0C0C0;
+    position: absolute;
+    left: 12.5px;
+    top: 22.5%;
+}
+
+.card_outer_ring_2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #24B89E;
+    background-color: #24B89E;
+    position: absolute;
+    left: 135px;
+    top: -40px;
+}
+.card_inner_dot_2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    position: absolute;
+    left: 12.5px;
+    top: 22.5%;
+}
+
+.card_outer_ring_3{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #C0C0C0;
+    background-color: #F9F9F9;
+    position: absolute;
+    left: 135px;
+    top: -40px;
+}
+.card_inner_dot_3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #C0C0C0;
+    background-color: #C0C0C0;
+    position: absolute;
+    left: 12.5px;
+    top: 22.5%;
+}
+
+/*styles for price section*/
+.contact_section{
+    background-color: #ffffff;
+    min-height: 500px;
+    padding-top: 35px;
+}
+
+.contact_section h2{
+    margin-bottom: 15px;
+}
+
+.left_contact{
+    float: left;
+    width: 60%;
+}
+
+.left_input{
+    width: 635px;
+    height: 65px;
+    margin-top: 30px;
+    padding-left: 10px;
+    border: 1px solid #24B89E;
+    font-size: 30px;
+    font-family: ralewayregular, sans-serif;
+}
+
+textarea{
+    width: 635px;
+    height: 190px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-top: 15px;
+    border: 1px solid #24B89E;
+    font-size: 30px;
+    font-family: ralewayregular, sans-serif;
+}
+
+.right_contact {
+    float: right;
+    width: 40%;
+    position: relative;
+}
+
+.right_input{
+    float: left;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50px;
+}
+
+.right_text{
+    display: block;
+    margin-left: 115px;
+    position: absolute;
+    font-size: 20px;
+    color: #C0C0C0;
+}
+
+.contact_img{
+    display: block;
+    width: 260px;
+    height: 250px;
+    margin-left: 70px;
+    background-image: url("../images/red_chair.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.submit_input{
+    display: block;
+    width: 340px;
+    height: 70px;
+    position: absolute;
+    bottom: -152px;
+    margin-left: 50px;
+    background-color: #24B89E;
+    font-size: 33px;
+    font-weight: bold;
+    font-family: ralewayregular, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+/*styles for footer*/
+footer{
+    background-color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.left_footer{
+    float: left;
+    padding-top: 10px;
+    font-size: 17px;
+    color: #a3a3a3;
+}
+
+.right_footer{
+    float: right;
+}
+
+.icons{
+    float: left;
+    display: inline-block;
+}
+
+.right_footer p{
+    float: right;
+    padding: 5px 10px 0 70px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #a3a3a3;
+}
